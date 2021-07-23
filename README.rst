@@ -27,16 +27,16 @@
 ==================
 
 *to create a file use the command*
-  pyassist create (file with file.extsion)
+  pyhelper create (file with file.extsion)
 *to delete a file use the command*
-  pyassist delete (file with file.extsion)
+  pyhelper delete (file with file.extsion)
 *to run a file use the command*
-  pyassist run (file with file.extsion) or pyassist (file with file.extsion)
+  pyhelper run (file with file.extsion) or pyassist (file with file.extsion)
   if the file exists
 *to print words on the termnial use the command*
-  pyassist print (words)
+  pyhelper print (words)
  *to install pip packages use the command*
-  pyassist install (pip package)
+  pyhelper install (pip package)
  *to uninstall pip packages use the command*
-  pyassist uninstall (pip package)
+  pyhelper uninstall (pip package)
 
