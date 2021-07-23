@@ -1,0 +1,37 @@
+#!/usr/local/bin/python3.9
+import os
+import sys
+
+arg = sys.argv
+
+
+def install():
+    os.system('pip install ' + arg[2])
+def uninstall():
+    os.system("pip uninstall " + arg[2])
+
+if os.path.isfile(arg[1]) == True and '.py' in arg[1]:
+    os.system('python3 ' + arg[1])
+if arg[1] == 'run' and os.path.isfile(arg[2]) == True and '.py' in arg[2]:
+    os.system('python3 ' + arg[2])
+
+if arg[1] == 'create' and os.path.exists(arg[2]):
+    print('this file all ready exists')
+elif arg[1] == 'create' and os.path.isfile(arg[2]) == False:
+    print('working')
+    f = open(arg[2], 'x')
+if arg[1] == 'install':
+    install()
+if arg[1] == 'uninstall':
+    uninstall()
+if arg[1] == 'print':
+    print('')
+    print(str(sys.argv[2]))
+    print('')
+
+if arg[1] == 'delete':
+    os.remove(arg[2])
+    print('removed')
+
+if arg[1] != 'delete' or 'print' or 'uninstall' or 'install' or 'create' or 'run':
+    print('sorry this command does not exists')

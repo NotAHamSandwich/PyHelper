@@ -1,0 +1,22 @@
+#!/usr/local/bin/python3.9
+import os
+import sys
+
+arg = sys.argv
+
+if arg[2] == '+':
+    num = float(arg[1])
+    num1 = float(arg[3])
+    print(num + num1)
+if arg[2] == '-':
+    num = float(arg[1])
+    num1 = float(arg[3])
+    print(num - num1) 
+if arg[2] == '/':
+    num = float(arg[1])
+    num1 = float(arg[3])
+    print(num / num1)
+if arg[2] == '!':
+    num = float(arg[1])
+    num1 = float(arg[3])
+    print(num * num1)
