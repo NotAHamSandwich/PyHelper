@@ -35,8 +35,8 @@
   if the file exists
 *to print words on the termnial use the command*
   pyhelper print (words)
- *to install pip packages use the command*
+*to install pip packages use the command*
   pyhelper install (pip package)
- *to uninstall pip packages use the command*
+*to uninstall pip packages use the command*
   pyhelper uninstall (pip package)
 
