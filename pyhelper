@@ -3,7 +3,7 @@ import os
 import sys
 
 arg = sys.argv
-
+version = '1.0.0'
 
 def install():
     os.system('pip install ' + arg[2])
@@ -17,7 +17,7 @@ if arg[1] == 'run' and os.path.isfile(arg[2]) == True and '.py' in arg[2]:
 
 if arg[1] == 'create' and os.path.exists(arg[2]):
     print('this file all ready exists')
-elif arg[1] == 'create' and os.path.isfile(arg[2]) == False:
+if arg[1] == 'create' and os.path.isfile(arg[2]) == False:
     print('working')
     f = open(arg[2], 'x')
 if arg[1] == 'install':
@@ -25,9 +25,18 @@ if arg[1] == 'install':
 if arg[1] == 'uninstall':
     uninstall()
 if arg[1] == 'print':
-    print('')
-    print(str(sys.argv[2]))
-    print('')
+    print('\n' + str(sys.argv[2]) + '\n')
+if arg[1] == '--help':
+    print('<create> <file name with extsion>')
+    print('<delete> <file name with extsion>')
+    print('<print> <and what you want to print on the ternmial>')
+    print('<install> <to install a pip packages>')
+    print('<uninstall> <to uninstall pip packages>')
+    print('<run> or <no run command if you choose> <to run a python script>')
+    print('<--version> <get the version of pyhelper')
+    print('<--help> <to show a list of commands>')
+if arg[1] == '--version':
+    print('\n' + version + '\n')
 
 if arg[1] == 'delete':
     os.remove(arg[2])
