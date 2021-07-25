@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.9
+#!/usr/local/bin/python3
 import os
 import sys
 
@@ -25,7 +25,7 @@ if arg[1] == 'install':
 if arg[1] == 'uninstall':
     uninstall()
 if arg[1] == 'print':
-    print('\n' + str(sys.argv[2]) + '\n')
+    print('\n' + str(sys.argv[2]))
 if arg[1] == '--help':
     print('<create> <file name with extsion>')
     print('<delete> <file name with extsion>')
@@ -36,11 +36,13 @@ if arg[1] == '--help':
     print('<--version> <get the version of pyhelper')
     print('<--help> <to show a list of commands>')
 if arg[1] == '--version':
-    print('\n' + version + '\n')
+    print('\n' + version)
 
 if arg[1] == 'delete':
     os.remove(arg[2])
     print('removed')
 
-if arg[1] != 'delete' or 'print' or 'uninstall' or 'install' or 'create' or 'run':
+if arg[1] == 'print' or arg[1] == 'create' or arg[1] == 'install' or arg[1] == 'uninstall' or arg[1] == 'delete' or arg[1] == '--version' or arg[1] == '--help' or arg[1] == 'run':
+    print('')
+else:
     print('sorry this command does not exists')
