@@ -44,8 +44,8 @@ then type this: export PATH=$PATH":$HOME/pyhelper_file"
   pyhelper install (pip package)
 *to uninstall pip packages use the command*
   pyhelper uninstall (pip package)
- *to get the version use the command*
+*to get the version use the command*
   pyhelper --version
- *to get help use the command*
+*to get help use the command*
   pyhelper --help
 
