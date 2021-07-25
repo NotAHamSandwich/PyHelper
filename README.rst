@@ -20,12 +20,12 @@
 * first make a file named: pyhelper_file
  **as it is writen exactly**
 * then if use nano or any texteditor 
- if you are using zsh the command: sudo nano .zshrc
- if you are using bash use the command: sudo nano .bashrc
+if you are using zsh the command: sudo nano .zshrc
+if you are using bash use the command: sudo nano .bashrc
 * then in termnial type the command cd pyhelper_file
 * run the installer script
-  to run the install script please cd in to your user dectory or where the script is download
-  then use the command python3 get-pyhelper.py
+to run the install script please cd in to your user dectory or where the script is download
+then use the command python3 get-pyhelper.py
 
 **Usage/Commands**
 ==================
