@@ -18,7 +18,7 @@
 **Instlation**
 ==============
 * first make a file named: pyhelper_file
- **as it is writen exactly**
+**as it is writen exactly**
 * then if use nano or any texteditor 
 if you are using zsh the command: sudo nano .zshrc
 if you are using bash use the command: sudo nano .bashrc
