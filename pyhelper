@@ -46,3 +46,4 @@ if arg[1] == 'print' or arg[1] == 'create' or arg[1] == 'install' or arg[1] == '
     print('')
 else:
     print('sorry this command does not exists')
+    print('to see all commands type pyhelper --help or to get the version type pyhelper --version')
