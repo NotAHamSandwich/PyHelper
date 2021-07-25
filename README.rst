@@ -20,12 +20,13 @@
 * first make a file named: pyhelper_file
 **as it is writen exactly**
 * then if use nano or any texteditor 
-if you are using zsh the command: sudo nano .zshrc
+if you are using zsh the is command: sudo nano .zshrc
+then type this: export PATH=$PATH":$HOME/pyhelper_file"
 if you are using bash use the command: sudo nano .bashrc
+then type this: export PATH=$PATH":$HOME/pyhelper_file"
 * then in termnial type the command cd pyhelper_file
-* run the installer script
-to run the install script please cd in to your user dectory or where the script is download
-then use the command python3 get-pyhelper.py
+* then type the command curl -LJO https://github.com/NotAHamSandwich/PyHelper.git
+* finaly run the installer script use this command: python3 get-pyhelper.py
 
 **Usage/Commands**
 ==================
@@ -43,4 +44,8 @@ then use the command python3 get-pyhelper.py
   pyhelper install (pip package)
 *to uninstall pip packages use the command*
   pyhelper uninstall (pip package)
+ *to get the version use the command*
+  pyhelper --version
+ *to get help use the command*
+  pyhelper --help
 
