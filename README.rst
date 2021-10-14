@@ -1,4 +1,4 @@
-**PyAssist - a python command line assiant**
+**PyHelper - a python command line assiant**
 ========================================
 **This is my first github project and my I am a bit new to python**
 **this was very fun and i am working on an installer script**
@@ -7,13 +7,7 @@
 **Requrments**
 ==============
 * *python3*
-* *macOSX or Linux system*
-*I dont think this will work on windows but mabye some smart people can make it work just add a pull request*
-
-**About me and pyassist**
-=========================
-*I am new to github so sorry if I secrew something up*
-
+* *macOSX*
 
 **Instlation**
 ==============
